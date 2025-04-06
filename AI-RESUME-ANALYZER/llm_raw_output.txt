@@ -1,0 +1,10 @@
+The "summary" field should be a short sentence describing the match. For example:
+"The candidate has good experience and certifications, but their skills and education do not match well."
+
+The "skills_match", "experience_match", "education_match", and "certifications_match" fields should be numbers between 0 and 100, representing the percentage match of each category.
+
+For example, if the resume has 70% match in skills, the "skills_match" field should be 70. If the resume has no match in education, the "education_match" field should be 0.
+
+You can assume that the resume and job description will be valid JSON objects, and that they will have the same fields as shown above.
+
+You can use any language or library to solve this problem, but you must return a JSON object in the format described above.
