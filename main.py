@@ -91,6 +91,12 @@ except Exception as e:
 
 # Search functionality
 st.sidebar.subheader("🔍 Search Candidates")
+
+# ✅ Initialize session state key if not already present
+if "search_query" not in st.session_state:
+    st.session_state.search_query = ""
+
+# 🔍 Display search input
 st.session_state.search_query = st.sidebar.text_input("Search by name or role", st.session_state.search_query)
 
 def format_date(date_str):
