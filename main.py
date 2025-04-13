@@ -30,7 +30,7 @@ if 'search_query' not in st.session_state:
     st.session_state.search_query = ""
 
 # === API KEY ===
-HF_API_KEY = "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"
+HF_API_KEY = "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"
 
 # === Upload Resume ===
 st.subheader("📂 Upload Resumes")
